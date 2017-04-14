@@ -50,8 +50,9 @@ public class PQHeap implements PQ {
     private void maintainMinHeap()
     {
         int key;
-        int i;
+        int counter;
         Element temp;
+        int activeindex;
 
          key = myheap.myarray.get(0).key;
          if(myheap.myarray.get(1) == null)
@@ -59,12 +60,13 @@ public class PQHeap implements PQ {
              myheap.myarray.set(1,myheap.myarray.get(0));
          }
          else
-             i = 1;
-             while (i < myheap.myarray.size())
+             counter = 1;
+             activeindex = 1;
+             while (counter < myheap.myarray.size())
              {
-                 if (myheap.myarray.get( < )
+                 if (myheap.myarray.get(0) > myheap.myarray.get(activeindex))
                  {
-
+                    activeindex = myheap.myarray.get()
                  }
              }
     }
